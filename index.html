@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Prótesis Dentales Automatizado</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .module-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .module-title {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .flow-container {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            grid-column: 1 / -1;
+        }
+        .flow-diagram {
+            width: 100%;
+            height: 500px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+        .phase {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            grid-column: 1 / -1;
+            margin-top: 20px;
+        }
+        .phase-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .phase-card {
+            background: #e8f4fc;
+            border-left: 4px solid #3498db;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .phase-week {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .phase-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Automatización para Prótesis Dentales Accesibles</h1>
+        <p class="subtitle">Solución tecnológica para comunidades con recursos limitados</p>
+    </header>
+
+    <div class="container">
+        <div class="module-card">
+            <h2 class="module-title">Módulo de Evaluación</h2>
+            <p>Sistema de digitalización y diagnóstico automatizado para identificar necesidades protésicas.</p>
+            <ul>
+                <li>Scanner intraoral adaptado</li>
+                <li>Software de análisis automatizado</li>
+                <li>Clasificación de prioridades</li>
+                <li>Integración con historial médico</li>
+            </ul>
+        </div>
+
+        <div class="module-card">
+            <h2 class="module-title">Módulo de Diseño</h2>
+            <p>Diseño asistido por computadora adaptado a anatomías diversas.</p>
+            <ul>
+                <li>Modelado 3D parametrizado</li>
+                <li>Biblioteca de diseños aprobados</li>
+                <li>Adaptación automatizada</li>
+                <li>Validación por especialistas</li>
+            </ul>
+        </div>
+
+        <div class="module-card">
+            <h2 class="module-title">Módulo de Fabricación</h2>
+            <p>Producción automatizada utilizando tecnologías accesibles.</p>
+            <ul>
+                <li>Impresión 3D de prótesis</li>
+                <li>Procesamiento posterior automatizado</li>
+                <li>Control de calidad integrado</li>
+                <li>Optimización de materiales</li>
+            </ul>
+        </div>
+
+        <div class="module-card">
+            <h2 class="module-title">Módulo de Gestión</h2>
+            <p>Sistema integral para seguimiento y administración del proceso.</p>
+            <ul>
+                <li>Gestión de citas y pacientes</li>
+                <li>Control de inventario</li>
+                <li>Comunicación con beneficiarios</li>
+                <li>Generación de reportes</li>
+            </ul>
+        </div>
+
+        <div class="flow-container">
+            <h2 class="module-title">Diagrama de Flujo del Proceso</h2>
+            <div class="flow-diagram">
+                [Diagrama de flujo interactivo que muestra el proceso completo desde la evaluación hasta la entrega]
+            </div>
+            <p>El proceso completo está optimizado para realizarse en el menor tiempo posible, priorizando la eficiencia y la accesibilidad sin comprometer la calidad de las prótesis dentales.</p>
+        </div>
+
+        <div class="phase">
+            <h2 class="module-title">Plan de Implementación Mensual</h2>
+            <div class="phase-grid">
+                <div class="phase-card">
+                    <div class="phase-week">Semana 1</div>
+                    <p>Análisis de necesidades y planificación detallada del sistema</p>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-week">Semana 2</div>
+                    <p>Desarrollo de prototipos y configuración inicial</p>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-week">Semana 3</div>
+                    <p>Integración de módulos y pruebas técnicas</p>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-week">Semana 4</div>
+                    <p>Validación con pacientes y ajustes finales</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Sistema de Automatización para Prótesis Dentales Accesibles © 2023</p>
+        <p>Diseñado para comunidades con recursos limitados</p>
+    </footer>
+</body>
+</html>
